@@ -23,6 +23,7 @@ export default class Astronaut {
     this.mercuryYearsLeft = parseInt(this.mercuryLifeExpectancy - this.mercuryYears);
     this.venusYearsLeft = parseInt(this.venusLifeExpectancy - this.venusYears);
     this.marsYearsLeft = parseInt(this.marsLifeExpectancy - this.marsYears);
+    this.jupiterYearsLeft = parseInt(this.jupiterLifeExpectancy - this.jupiterYears);
   }
 
 
