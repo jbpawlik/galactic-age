@@ -65,4 +65,8 @@ describe ('Astronaut', () => {
   test('Should calculate Mars years remaining based off life expectancy', ()=> {
     expect(astronaut.marsYearsLeft).toEqual(1);
   });
+
+  test('Should calculate Jupiter years remaining based off life expectancy', ()=> {
+    expect(astronaut.jupiterYearsLeft).toEqual(1);
+  });
 });
