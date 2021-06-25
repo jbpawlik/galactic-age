@@ -10,8 +10,13 @@ export default class Astronaut {
     this.jupiterYears = parseInt(age * 365.25 / 4383);
   }
 
-  yearsToDeath(age) {
-    this.earthYearsLeft = 72 - age;
+  lifeExpectancy() {
+
+  }
+
+  yearsToDeath() {
+    this.earthYearsLeft = 72 - this.earthYears;
+    // this.mercuryYearsLeft =
   }
 
 

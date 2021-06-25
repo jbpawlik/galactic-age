@@ -4,6 +4,7 @@ import Astronaut from '../src/js/astronaut.js';
 describe ('Astronaut', () => {
   let astronaut = new Astronaut();
   astronaut.solarAge(70);
+  astronaut.lifeExpectancy();
 
   beforeEach(() => {
   });
@@ -26,6 +27,10 @@ describe ('Astronaut', () => {
 
   test('Should calculate age in Jupiter years', ()=> {
     expect(astronaut.jupiterYears).toEqual(5);
+  });
+
+  test('Should calculate life expectancy of Earth', ()=> {
+    expect(astronaut.earthLifeExpectancy).toEqual(72);
   });
 
   test('Should calculate Earth years remaining based off life expectancy', ()=> {
