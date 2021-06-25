@@ -11,6 +11,7 @@ export default class Astronaut {
   }
 
   yearsToDeath(age) {
+    this.earthYearsLeft = 72 - age;
   }
 
 
