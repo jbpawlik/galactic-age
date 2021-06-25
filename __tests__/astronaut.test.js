@@ -5,9 +5,6 @@ describe ('Astronaut', () => {
   let astronaut = new Astronaut();
 
   beforeEach(() => {
-    astronaut.demographic = 'global average';
-    astronaut.happiness = 'no complaints';
-    astronaut.health = 'apple a day';
     astronaut.solarAge(70);
     astronaut.lifeExpectancy();
     astronaut.lifeExpectancyFactors();

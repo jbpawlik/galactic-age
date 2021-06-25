@@ -1,1 +1,4 @@
-
+#jumbotron {
+  text-align: center;
+  border: solid 1em black;
+}

@@ -20,13 +20,12 @@ export default class Astronaut {
   }
 
   lifeExpectancyFactors() {
-    if (this.demographic === 'global average') {
-      this.earthLifeExpectancy = 72;
+    if (this.demographic === 'developing') {
+      this.earthLifeExpectancy = 72 * .9;
     } else if (this.demographic === 'developed') {
       this.earthLifeExpectancy = 72 * 1.1;
     } else {
-      this.demographic = 'developing';
-      this.earthLifeExpectancy = 72 * .9;
+      this.demographic = 'global average';
     }
     if (this.happiness === 'happy') {
       this.earthLifeExpectancy * 1.1;
@@ -45,7 +44,7 @@ export default class Astronaut {
   }
 
   yearsToDeath() {
-    this.earthYearsLeft = 72 - this.earthYears;
+    this.earthYearsLeft = this.earthLifeExpectancy - this.earthYears;
     this.mercuryYearsLeft = parseInt(this.mercuryLifeExpectancy - this.mercuryYears);
     this.venusYearsLeft = parseInt(this.venusLifeExpectancy - this.venusYears);
     this.marsYearsLeft = parseInt(this.marsLifeExpectancy - this.marsYears);
