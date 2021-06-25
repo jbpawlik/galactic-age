@@ -12,31 +12,30 @@ export default class Astronaut {
   }
 
   lifeExpectancy() {
-    this.earthLifeExpectancy = 72;
-    this.mercuryLifeExpectancy = parseInt(72 * 365.25 / 88);
-    this.venusLifeExpectancy = parseInt(72 * 365.25 / 225);
-    this.marsLifeExpectancy = parseInt(72 * 365.25 / 687);
-    this.jupiterLifeExpectancy = parseInt(72 * 365.25 / 4383);
+    this.mercuryLifeExpectancy = parseInt(this.earthLifeExpectancy * 365.25 / 88);
+    this.venusLifeExpectancy = parseInt(this.earthLifeExpectancy * 365.25 / 225);
+    this.marsLifeExpectancy = parseInt(this.earthLifeExpectancy * 365.25 / 687);
+    this.jupiterLifeExpectancy = parseInt(this.earthLifeExpectancy * 365.25 / 4383);
   }
 
   lifeExpectancyFactors() {
-    if (this.demographic === 'developing') {
-      this.earthLifeExpectancy = 72 * .9;
-    } else if (this.demographic === 'developed') {
-      this.earthLifeExpectancy = 72 * 1.1;
+    if (this.region === 'developing') {
+      this.earthLifeExpectancy *= .9;
+    } else if (this.region === 'advanced') {
+      this.earthLifeExpectancy *= 1.1;
     } else {
-      this.demographic = 'global average';
+      this.region = 'developed';
     }
-    if (this.happiness === 'happy') {
-      this.earthLifeExpectancy * 1.1;
-    } else if (this.happiness === 'poor') {
-      this.earthLifeExpectancy * .9;
+    if (this.happiness === 'ecstatic') {
+      this.earthLifeExpectancy *= 1.1;
+    } else if (this.happiness === 'despondent') {
+      this.earthLifeExpectancy *= .9;
     } else {
       this.happiness = 'no complaints';
     }
     if (this.health === 'fit as a fiddle') {
       this.earthLifeExpectancy *= 1.1;
-    } else if (this.health === 'poor') {
+    } else if (this.health === 'failing') {
       this.earthLifeExpectancy *= .9;
     } else {
       this.health === 'apple a day';

@@ -24,38 +24,40 @@
   <div class="container">
     <form id="employeeInfo">
       <h4> Enter worker information here:</h4>
-      <input type="text" id="nameField" class="fields" placeholder="Employee Name">
-      <input type="number" name="ageField" class="fields" placeholder="Employee Age">
+      <div class="form-group" required>
+        <input type="text" id="nameField" class="fields" placeholder="Employee Name" required>
+        <input type="number" id="ageField" class="fields" placeholder="Employee Age" required>
+      </div>
       <div class="row">
         <div class="col-4">
           <h3>Nationality</h3>
           <div class="radio">
             <label>
-              <input name="region" type="radio" checked>Advanced Region
+              <input name="region" type="radio" value="advanced" checked>Advanced Region
             </label>
           </div>
           <div class="radio">
-            <input name="region" type="radio">Developed Region
+            <input name="region" type="radio" value="developed">Developed Region
           </div>
           <div class="radio">
-            <input name="region" type="radio">Developing Region
+            <input name="region" type="radio" value="developing">Developing Region
           </div>
         </div>
         <div class="col-4">
           <h3>Health</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="health" checked>Fit as a Fiddle
+              <input type="radio" name="health" value="fit as a fiddle" checked>Fit as a Fiddle
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="health">Apple a Day
+              <input type="radio" name="health" value="apple a day">Apple a Day
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="health">Failing
+              <input type="radio" name="health" value="failing">Failing
             </label>
           </div>
         </div>
@@ -63,17 +65,17 @@
           <h3>Happiness</h3>
           <div class="radio">
             <label>
-              <input type="radio" name="happiness" checked>Happy
+              <input type="radio" name="happiness" value="ecstatic" checked>Ecstatic
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="happiness">No Complaints
+              <input type="radio" name="happiness" value="no complaints">No Complaints
             </label>
           </div>
           <div class="radio">
             <label>
-              <input type="radio" name="happiness">Despondent
+              <input type="radio" name="happiness" value="despondent">Despondent
             </label>
           </div>
         </div>
@@ -82,11 +84,15 @@
     </form>
   </div>
   <div class="container" id="employeeOutput">
+    <h4>Name: <span id="nameOutput"></span></h4>
     <div class="row">
-      <h6>Employee Age in Galactive Years:</h6>
-      <div class="col-6">
-        <ol><span id="galacticYears"></span></ol>
-
+      <div class="col-5">
+        <h5>Employee Age in Solar Years:</h5>
+        <ol><span id="solarYears"></span></ol>
+      </div>
+      <div class="col-5">
+        <h5>Life Expectancy in Solar Years:</h5>
+        <ol><span id="solarExpectancy"></span></ol>
       </div>
     </div>
     </div>

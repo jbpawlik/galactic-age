@@ -9,20 +9,28 @@ import $ from 'jquery';
 
 
 
-
-$('#workerInfoButton').click(function() {
-  let astronaut = new Astronaut();
-  let employeeAge = $('#ageField').val();
-  astronaut.solarAge(employeeAge);
-  astronaut.lifeExpectancy();
-  astronaut.lifeExpectancyFactors();
-  astronaut.yearsToDeath(employeeAge);
-  let region = $('input:radio:checked[name:region]').val();
-  let health = $('input:radio:checked[name:health]').val();
-  let happiness = $('input:radio:checked[name=happiness]').val();
-  let employeeName = $('#nameField').val();
-  
-  $("#galacticYears").text('<li> Earth:' + astronaut.earthYears + '</li>')
+$(document).ready(function() {
 
 
+  $('#workerInfoButton').click(function() {
+    event.preventDefault();
+
+
+    let astronaut = new Astronaut();
+    let employeeAge = $('#ageField').val();
+    astronaut.region = $('input:radio:checked[name=region]').val();
+    astronaut.health = $('input:radio:checked[name=health]').val();
+    astronaut.happiness = $('input:radio:checked[name=happiness]').val();
+    astronaut.earthLifeExpectancy = 72;
+    astronaut.lifeExpectancyFactors();
+    astronaut.lifeExpectancy();
+    astronaut.solarAge(employeeAge);
+    astronaut.yearsToDeath(employeeAge);
+    let employeeName = $('#nameField').val();
+
+    $('#nameOutput').html(employeeName);
+    $('#solarYears').html('<li> Earth: ' + astronaut.earthYears + ' Years Old </li><br>' + '<li> Mercury: ' + astronaut.mercuryYears + ' Years Old </li><br>' + '<li> Venus: ' + astronaut.venusYears + ' Years Old </li><br>' + '<li> Mars: ' + astronaut.marsYears + ' Years Old </li><br>' + '<li> Jupiter: ' + astronaut.jupiterYears + ' Years Old');
+    $('#solarExpectancy').html('<li> Earth: ' + astronaut.earthLifeExpectancy + ' Years Old </li><br>' + '<li> Mercury: ' + astronaut.mercuryLifeExpectancy + ' Years Old </li><br>' + '<li> Venus: ' + astronaut.venusLifeExpectancy + ' Years Old </li><br>' + '<li> Mars: ' + astronaut.marsLifeExpectancy + ' Years Old </li><br>' + '<li> Jupiter: ' + astronaut.jupiterLifeExpectancy + ' Years Old');
+
+  });
 });
