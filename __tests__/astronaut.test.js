@@ -38,6 +38,10 @@ describe ('Astronaut', () => {
     expect(astronaut.mercuryLifeExpectancy).toEqual(298);
   })
 
+  test('Should calculate life expectancy of Venus', ()=> {
+    expect(astronaut.venusLifeExpectancy).toEqual(116);
+  })
+
 
   test('Should calculate Earth years remaining based off life expectancy', ()=> {
     expect(astronaut.earthYearsLeft).toEqual(2);
