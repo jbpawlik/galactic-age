@@ -21,6 +21,7 @@ export default class Astronaut {
   yearsToDeath() {
     this.earthYearsLeft = 72 - this.earthYears;
     this.mercuryYearsLeft = parseInt(this.mercuryLifeExpectancy - this.mercuryYears);
+    this.venusYearsLeft = parseInt(this.venusLifeExpectancy - this.venusYears)
   }
 
 

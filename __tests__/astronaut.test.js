@@ -55,6 +55,10 @@ describe ('Astronaut', () => {
   });
 
   test('Should calculate Mercury years remaining based off life expectancy', ()=> {
-    expect(astronaut.mercuryYearsLeft).toEqual(8)
+    expect(astronaut.mercuryYearsLeft).toEqual(8);
   });
+
+  test('Should calculate Venus years remaining based off life expectancy', ()=> {
+    expect(astronaut.venusYearsLeft).toEqual(3);
+  })
 });
