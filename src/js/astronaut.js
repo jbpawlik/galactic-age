@@ -3,6 +3,7 @@ export default class Astronaut {
     this.age = age;
   }
 
-  mercuryAge() {
+  mercuryAge(age) {
+    this.mercuryYears = parseInt(age * 365.25 / 88);
   }
 }
