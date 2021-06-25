@@ -5,6 +5,7 @@ describe ('Astronaut', () => {
   let astronaut = new Astronaut();
   astronaut.solarAge(70);
   astronaut.lifeExpectancy();
+  astronaut.yearsToDeath(70);
 
   beforeEach(() => {
   });
@@ -33,9 +34,15 @@ describe ('Astronaut', () => {
     expect(astronaut.earthLifeExpectancy).toEqual(72);
   });
 
+  test('Should calculate life expectancy of Mercury', ()=> {
+    expect(astronaut.mercuryLifeExpectancy).toEqual(298);
+  })
+
+
   test('Should calculate Earth years remaining based off life expectancy', ()=> {
-    astronaut.yearsToDeath(70);
     expect(astronaut.earthYearsLeft).toEqual(2);
   });
 
+  test('Should calculate Mercury years remaining based off life expectancy', ()=> {
+  })
 });
