@@ -6,4 +6,7 @@ export default class Astronaut {
   mercuryAge(age) {
     this.mercuryYears = parseInt(age * 365.25 / 88);
   }
+
+  venusAge() {
+  }
 }
