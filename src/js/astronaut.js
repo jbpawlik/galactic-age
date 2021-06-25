@@ -15,7 +15,7 @@ export default class Astronaut {
     this.marsYears = parseInt(age * 365.25 / 687);
   }
 
-  jupiterAge() {
-   
+  jupiterAge(age) {
+    this.jupiterYears = parseInt(age * 365.25 / 4383);
   }
 }
