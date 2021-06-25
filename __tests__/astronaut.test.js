@@ -24,8 +24,8 @@ describe ('Astronaut', () => {
 
   test('Should calculate age in Mars years', ()=> {
     astronaut.marsAge(70);
-    expect(astronaut.marsYears).toEqual(37)
-  })
+    expect(astronaut.marsYears).toEqual(37);
+  });
 
 
 });

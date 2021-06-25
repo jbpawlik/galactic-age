@@ -10,4 +10,9 @@ export default class Astronaut {
   venusAge(age) {
     this.venusYears = parseInt(age * 365.25 / 225);
   }
+  marsAge() {
+   
+  }
+
+
 }
