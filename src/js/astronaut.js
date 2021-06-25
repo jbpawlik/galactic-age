@@ -15,6 +15,7 @@ export default class Astronaut {
     this.mercuryLifeExpectancy = parseInt(72 * 365.25 / 88);
     this.venusLifeExpectancy = parseInt(72 * 365.25 / 225);
     this.marsLifeExpectancy = parseInt(72 * 365.25 / 687);
+    this.jupiterLifeExpectancy = parseInt(72 * 365.25 / 4383);
   }
 
   yearsToDeath() {
