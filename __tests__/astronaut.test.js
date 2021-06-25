@@ -18,8 +18,14 @@ describe ('Astronaut', () => {
 
   test('Should calculate age in Venus years', () => {
     astronaut.venusAge(70);
-    expect(astronaut.venusYears).toBeDefined();
+    expect(astronaut.venusYears).toEqual(113);
 
   });
+
+  test('Should calculate age in Mars years', ()=> {
+    astronaut.marsAge(70);
+    expect(astronaut.marsYears).toEqual(37)
+  })
+
 
 });
