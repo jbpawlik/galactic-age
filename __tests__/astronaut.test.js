@@ -3,11 +3,15 @@ import Astronaut from '../src/js/astronaut.js';
 
 describe ('Astronaut', () => {
   let astronaut = new Astronaut();
-  astronaut.solarAge(70);
-  astronaut.lifeExpectancy();
-  astronaut.yearsToDeath(70);
 
   beforeEach(() => {
+    astronaut.demographic = 'global average';
+    astronaut.happiness = 'no complaints';
+    astronaut.health = 'apple a day';
+    astronaut.solarAge(70);
+    astronaut.lifeExpectancy();
+    astronaut.lifeExpectancyFactors();
+    astronaut.yearsToDeath(70);
   });
 
   test('Should create astronaut object with age property', () => {
@@ -69,4 +73,9 @@ describe ('Astronaut', () => {
   test('Should calculate Jupiter years remaining based off life expectancy', ()=> {
     expect(astronaut.jupiterYearsLeft).toEqual(1);
   });
+
+  test('Should change life expectancy based on demographic information', ()=> {
+    expect(astronaut.earthLifeExpectancy).toEqual(72);
+  });
+
 });
