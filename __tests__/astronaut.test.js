@@ -28,4 +28,9 @@ describe ('Astronaut', () => {
     expect(astronaut.jupiterYears).toEqual(5);
   });
 
+  test('Should calculate Earth years remaining based off life expectancy', ()=> {
+    astronaut.yearsToDeath(70);
+    expect(astronaut.earthYearsLeft).toEqual(2);
+  });
+
 });
