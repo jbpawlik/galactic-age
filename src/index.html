@@ -22,11 +22,62 @@
       </p>
     </div>
   <div class="container">
-    <form>
-
-      <input type="text" name="nameField">
-      <button type="submit">Employee's Name</button>
+    <form id="employeeInfo">
+      <h3>Enter worker information here: <input type="text" class="form control" name="nameField" placeholder="Employee Name"></h3>
+      <div class="row">
+        <div class="col-4">
+          <h3>Nationality</h3>
+          <div class="radio">
+            <label>
+              <input name="region" type="radio"checked>Advanced Region
+            </label>
+          </div>
+          <div class="radio">
+            <input name="region" type="radio">Developed Region
+          </div>
+          <div class="radio">
+            <input name="region" type="radio">Developing Region
+          </div>
+        </div>
+        <div class="col-4">
+          <h3>Health</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="health" checked>Fit as a Fiddle
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="health">Apple a Day
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="health">Failing
+            </label>
+          </div>
+        </div>
+        <div class="col-4">
+          <h3>Happiness</h3>
+          <div class="radio">
+            <label>
+              <input type="radio" name="happiness" checked>Happy
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="happiness">No Complaints
+            </label>
+          </div>
+          <div class="radio">
+            <label>
+              <input type="radio" name="happiness">Poor
+            </label>
+          </div>
+        </div>
+      </div>
     </form>
+    <button type="submit">Submit Information</button>
   </div>
 </body>
 </html>

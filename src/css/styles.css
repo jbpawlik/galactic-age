@@ -1,4 +1,13 @@
 #jumbotron {
   text-align: center;
   border: solid 1em black;
+  padding: 1em;
+  font-weight: bold;
+}
+.container {
+  margin: 2em;
+}
+.col-4 {
+  border: solid .2em black;
+  padding: 1em;
 }
