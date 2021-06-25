@@ -30,7 +30,7 @@ $(document).ready(function() {
 
     $('#nameOutput').html(employeeName);
     $('#solarYears').html('<li> Earth: ' + astronaut.earthYears + ' Years Old </li><br>' + '<li> Mercury: ' + astronaut.mercuryYears + ' Years Old </li><br>' + '<li> Venus: ' + astronaut.venusYears + ' Years Old </li><br>' + '<li> Mars: ' + astronaut.marsYears + ' Years Old </li><br>' + '<li> Jupiter: ' + astronaut.jupiterYears + ' Years Old');
-    $('#solarExpectancy').html('<li> Earth: ' + astronaut.earthLifeExpectancy + ' Years Old </li><br>' + '<li> Mercury: ' + astronaut.mercuryLifeExpectancy + ' Years Old </li><br>' + '<li> Venus: ' + astronaut.venusLifeExpectancy + ' Years Old </li><br>' + '<li> Mars: ' + astronaut.marsLifeExpectancy + ' Years Old </li><br>' + '<li> Jupiter: ' + astronaut.jupiterLifeExpectancy + ' Years Old');
+    $('#solarExpectancy').html('<li> Earth: ' + parseInt(astronaut.earthLifeExpectancy) + ' Years Old </li><br>' + '<li> Mercury: ' + astronaut.mercuryLifeExpectancy + ' Years Old </li><br>' + '<li> Venus: ' + astronaut.venusLifeExpectancy + ' Years Old </li><br>' + '<li> Mars: ' + astronaut.marsLifeExpectancy + ' Years Old </li><br>' + '<li> Jupiter: ' + astronaut.jupiterLifeExpectancy + ' Years Old');
 
   });
 });
