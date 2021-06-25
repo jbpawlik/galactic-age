@@ -11,7 +11,7 @@ export default class Astronaut {
   }
 
   lifeExpectancy() {
-
+    this.earthLifeExpectancy = 72;
   }
 
   yearsToDeath() {
