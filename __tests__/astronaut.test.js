@@ -10,6 +10,7 @@ describe ('Astronaut', () => {
     astronaut.lifeExpectancyFactors();
     astronaut.yearsToDeath(70);
     astronaut.earthLifeExpectancy = 72;
+    astronaut.longLifeChecker();
   });
 
   test('Should create astronaut object with age property', () => {
@@ -76,4 +77,7 @@ describe ('Astronaut', () => {
     expect(astronaut.earthLifeExpectancy).toEqual(72);
   });
 
+  test('Should return true if [planet]yearsLeft is less than zero', ()=> {
+    expect(astronaut.longLifeChecker()).toEqual(false);
+  });
 });

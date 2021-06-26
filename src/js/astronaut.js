@@ -50,4 +50,8 @@ export default class Astronaut {
     this.jupiterYearsLeft = parseInt(this.jupiterLifeExpectancy - this.jupiterYears);
   }
 
+  longLifeChecker() {
+
+  }
+
 }
