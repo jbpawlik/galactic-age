@@ -34,9 +34,16 @@ p {
 }
 .fields {
   margin: 1em;
-  width: 40%;
+  width: 45%;
 }
 #workerInfoButton {
   width: 100%;
   margin: 1em;
+}
+#lifespanAlert {
+  display: none;
+}
+ul {
+  list-style:none;
+  padding-left:0;
 }
