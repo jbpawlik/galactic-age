@@ -12,25 +12,25 @@
       <h1>Planet Profit</h1>
       <h2>The leader in cosmic capitalism!</h2>
       <p>
-        As you all know, Planet Profit is not only the first private company to make interplanetary travel a reality, we are also the first to make a fortune in the process.
+        As you know, Planet Profit was not only the first private company to make interplanetary travel a reality, we were also the first to make a fortune in the process.
       </p>
       <p>
         We often get questions about how we do so well for ourselves. One thing we take pride in is our commitment to our employees. Particularly when it comes to figuring out how to wring every possible second of working life out of them.
       </p>
       <p>
-        To that end, we have developed this very-close-to-free tool to determine the relative ages of your exployees ypu can better set their wage scale and communicate their age of retirement (where applicable). Not that anyone who works for us wants to retire and give up this fabulous and exciting life!
+        To that end, we have developed this tool to determine the relative ages of exployees, to better set their wage scale and communicate their age of retirement (if applicable). Not that anyone who works for us wants to retire and give up the fabulous and exciting life of shareholder wage creation!
       </p>
     </div>
   <div class="container">
     <form id="employeeInfo">
       <h4> Enter worker information here:</h4>
-      <div class="form-group" required>
-        <input type="text" id="nameField" class="fields" placeholder="Employee Name" required>
-        <input type="number" id="ageField" class="fields" placeholder="Employee Age" required>
+      <div class="form-group">
+        <input type="text" id="nameField" class="fields" placeholder="Employee Name">
+        <input type="number" min="1" id="ageField" class="fields" oninput="validity.valid || (value='')" placeholder="Employee Age">
       </div>
       <div class="row">
         <div class="col-4">
-          <h3>Nationality</h3>
+          <h3>Region of Origin</h3>
           <div class="radio">
             <label>
               <input name="region" type="radio" value="advanced" checked>Advanced Region
@@ -93,6 +93,10 @@
       <div class="col-5">
         <h5>Life Expectancy in Solar Years:</h5>
         <ol><span id="solarExpectancy"></span></ol>
+      </div>
+      <div class="col-2">
+        <h5>Work-Life Span:</h5>
+        <ol><span id="workLifespan"></span></ol>
       </div>
     </div>
     </div>

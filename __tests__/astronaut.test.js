@@ -9,6 +9,7 @@ describe ('Astronaut', () => {
     astronaut.lifeExpectancy();
     astronaut.lifeExpectancyFactors();
     astronaut.yearsToDeath(70);
+    astronaut.earthLifeExpectancy = 72;
   });
 
   test('Should create astronaut object with age property', () => {

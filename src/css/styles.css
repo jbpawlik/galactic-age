@@ -1,19 +1,33 @@
+body {
+  background-image: url('../assets/images/stars.jpg');
+  font-weight: bold;
+}
 #jumbotron {
   text-align: center;
   border: solid 1em black;
   padding: 1em;
-  font-weight: bold;
+  background-color: rgb(253, 246, 231, .85);
+  margin-left: 10%;
+  margin-right: 10%;
+}
+h2 {
+  margin: 1em;
+}
+p {
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .container {
   margin: 2em;
 }
-.col-4 {  
+.col-4 {
   border: solid .2em black;
   padding: 1em;
 }
-#employeeInfo {  
+#employeeInfo, #employeeOutput {
   border: solid .2em black;
   padding:2em;
+  background-color: rgb(253, 245, 230, .9);
 }
 .radio {
   margin: .1em;
