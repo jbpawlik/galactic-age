@@ -51,7 +51,11 @@ export default class Astronaut {
   }
 
   longLifeChecker() {
-
+    if (this.earthYearsLeft < 0 || this.mercuryYearsLeft < 0 || this.venusYearsLeft < 0 || this.marsYearsLeft < 0 || this.jupiterYearsLeft < 0) {
+      return true;
+    } else {
+      return false;
+    }
   }
 
 }
