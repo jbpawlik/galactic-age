@@ -1,3 +1,7 @@
+---
+permalink: /src/index.html
+---
+
 # __Planet Profit__
 
 <img src="src/assets/images/osmo.png" alt="Sandy Bullock ordering pizza online" width="400"/>
