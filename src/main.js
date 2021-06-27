@@ -9,7 +9,7 @@ import $ from 'jquery';
 
 $('#workerInfoButton').attr('disabled', 'disabled');
 
-$('#ageField').keyup(function() {
+$('#ageField').keydown(function() {
   $('#workerInfoButton').removeAttr('disabled');
 });
 
@@ -41,5 +41,6 @@ $('#workerInfoButton').click(function(event) {
   } else {
     $('#workLifespan').html(`<li>ALERT!</li>POTENTIAL<li></li>PROFIT<li>OPPORTUNITY</li><li>SEE NOTE</li>`);
     $('#lifespanAlert').show();
+    $('#pastDue').html(`${astronaut.yearsPastDueEarth} Earth years, ${astronaut.yearsPastDueMercury} Mercury years, ${astronaut.yearsPastDueVenus} Venus years, ${astronaut.yearsPastDueMars} Mars years, or ${astronaut.yearsPastDueJupiter}+ Jupiter years`);
   }
 });

@@ -43,7 +43,7 @@ export default class Astronaut {
   }
 
   yearsToDeath() {
-    this.earthYearsLeft = this.earthLifeExpectancy - this.earthYears;
+    this.earthYearsLeft = parseInt(this.earthLifeExpectancy - this.earthYears);
     this.mercuryYearsLeft = parseInt(this.mercuryLifeExpectancy - this.mercuryYears);
     this.venusYearsLeft = parseInt(this.venusLifeExpectancy - this.venusYears);
     this.marsYearsLeft = parseInt(this.marsLifeExpectancy - this.marsYears);
@@ -52,6 +52,11 @@ export default class Astronaut {
 
   longLifeChecker() {
     if (this.earthYearsLeft < 0 || this.mercuryYearsLeft < 0 || this.venusYearsLeft < 0 || this.marsYearsLeft < 0 || this.jupiterYearsLeft < 0) {
+      this.yearsPastDueEarth = Math.abs(this.earthYearsLeft);
+      this.yearsPastDueMercury = Math.abs(this.mercuryYearsLeft);
+      this.yearsPastDueVenus = Math.abs(this.venusYearsLeft);
+      this.yearsPastDueMars = Math.abs(this.marsYearsLeft);
+      this.yearsPastDueJupiter = Math.abs(this.jupiterYearsLeft);
       return true;
     } else {
       return false;
