@@ -1,6 +1,6 @@
 # __Planet Profit__
 
-<img src="src/assets/images/osmo.png" alt="The Profit Planet" width="400"/>
+<img src="src/assets/images/osmo.png" alt="The Profit Planet" width="400">
 
 ### by [James Benjamin Pawlik](http://github.com/jbpawlik)
 

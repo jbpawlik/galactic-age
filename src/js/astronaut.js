@@ -62,5 +62,4 @@ export default class Astronaut {
       return false;
     }
   }
-
 }

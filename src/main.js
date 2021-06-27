@@ -33,7 +33,6 @@ $('#workerInfoButton').click(function(event) {
 
   $('#planetYears').html(`<li>Earth: ${astronaut.earthYears} Years Old</li><li>Mercury: ${astronaut.mercuryYears} Years Old</li><li>Venus: ${astronaut.venusYears} Years Old</li><li>Mars: ${astronaut.marsYears} Years Old</li><li>Jupiter: ${astronaut.jupiterYears} Years Old</li>`);
 
-
   $('#planetExpectancy').html(`<li> Earth: ${parseInt(astronaut.earthLifeExpectancy)} Years Old</li><li>Mercury: ${astronaut.mercuryLifeExpectancy}  Years Old </li><li>Venus: ${astronaut.venusLifeExpectancy} Years Old</li><li>Mars: ${astronaut.marsLifeExpectancy} Years Old</li><li>Jupiter: ${astronaut.jupiterLifeExpectancy} Years Old`);
 
   if (longLife === false) {
