@@ -1,5 +1,6 @@
 {
-  "name": "shape-tracker",
+  "homepage": "https://github.com/jbpawlik/galactic-age",
+  "name": "galactic-age",
   "version": "1.0.0",
   "description": "",
   "main": "main.js",
