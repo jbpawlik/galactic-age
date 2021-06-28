@@ -1,7 +1,3 @@
----
-permalink: /index.html
----
-
 # __Planet Profit__
 
 <img src="src/assets/images/osmo.png" alt="The Profit Planet" width="400">
