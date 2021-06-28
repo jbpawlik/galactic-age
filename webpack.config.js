@@ -16,7 +16,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
       title: 'Planet Profit',
-      template: './src/index.html',
+      template: './index.html',
       inject: 'body'
     })
   ],
