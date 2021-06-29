@@ -1,6 +1,10 @@
 /* eslint-disable no-undef */
 export default class Astronaut {
-  constructor() {
+  constructor(region, health, happiness) {
+    this.region = region;
+    this.health = health;
+    this.happiness = happiness;
+    this.earthLifeExpectancy = 72;
   }
 
   solarAge(age) {
@@ -50,7 +54,7 @@ export default class Astronaut {
     this.jupiterYearsLeft = parseInt(this.jupiterLifeExpectancy - this.jupiterYears);
   }
 
-  longLifeChecker() {
+  yearsPastDue() {
     if (this.earthYearsLeft < 0 || this.mercuryYearsLeft < 0 || this.venusYearsLeft < 0 || this.marsYearsLeft < 0 || this.jupiterYearsLeft < 0) {
       this.yearsPastDueEarth = Math.abs(this.earthYearsLeft);
       this.yearsPastDueMercury = Math.abs(this.mercuryYearsLeft);

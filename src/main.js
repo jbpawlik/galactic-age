@@ -27,7 +27,7 @@ $('#workerInfoButton').click(function(event) {
   astronaut.solarAge(employeeAge);
   astronaut.yearsToDeath(employeeAge);
   let employeeName = $('#nameField').val();
-  let longLife = astronaut.longLifeChecker();
+  let longLife = astronaut.yearsPastDue();
 
   $('#nameOutput').html(employeeName);
 

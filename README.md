@@ -15,9 +15,11 @@ Planet Profit uses custom HTML and CSS (with Bootstrap). JavaScript and JQuery a
 ### __Setup/Installation__
 1. Download or clone the [repository](http://github.com/jbpawlik/galactic-age) to your local machine
 2. Navigate to the top level of the directory
-3. After installing Node Package Manager, run "npm run build" in your terminal, then "rpm run start" to open a live server. Or, open the index.html file in your browser.
-
-Alternately, visit [Github Pages](http://jbpawlik.github.io/galactic-age) to view the site.
+3. Install Node Package Manager before proceeding with the rest of the instructions
+4. Run "npm install" in your terminal
+5. Run "npm build"
+6. "npm run start" will open the website in your browser
+7. "npm run test" will allow you to test the code
 
 ### __Tests/Specifications__
 Full tests and specifications can be found in the __tests__ folder in the directory.
