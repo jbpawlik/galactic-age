@@ -21,6 +21,8 @@ Planet Profit uses custom HTML and CSS (with Bootstrap). JavaScript and JQuery a
 6. "npm run start" will open the website in your browser
 7. "npm run test" will allow you to test the code
 
+Alternately, visit the site at [Github Pages](https://jbpawlik.github.io/galactic-age/)
+
 ### __Tests/Specifications__
 Full tests and specifications can be found in the __tests__ folder in the directory.
 
